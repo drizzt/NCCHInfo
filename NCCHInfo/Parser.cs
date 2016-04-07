@@ -146,7 +146,7 @@ namespace NCCHInfo
                 Console.WriteLine();
             }
 
-            if(header.exefsSize != 0)
+            if(false)
             {
                 //We need generate two xorpads for exefs if it uses 7.x crypto, since only a part of it uses the new crypto.
                 entry = parseNCCHSection(header, NCCHSection.ExeFS, keyY, false, false, true, indent);
@@ -163,7 +163,7 @@ namespace NCCHInfo
                 Console.WriteLine();
             }
 
-            if(header.romfsSize != 0)
+            if(false)
             {
                 entry = parseNCCHSection(header, NCCHSection.RomFS, keyY, uses7xCrypto, usesSeedCrypto, true, indent);
                 byte[] namebytes = Encoding.UTF8.GetBytes(genOutName(titleID, GetPartitionName(idx), "romfs"));
